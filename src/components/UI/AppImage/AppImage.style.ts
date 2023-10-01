@@ -7,7 +7,7 @@ interface IStyledImgProps {
 }
 
 export const SCImg = styled.div<IStyledImgProps>`
-  border: 1px solid ${(props) => props.theme.colors.lightGray};
+  border: 1px solid ${(props) => props.theme.colors?.lightGray};
   overflow: hidden;
 
   ${(props) =>
@@ -32,7 +32,7 @@ export const SCImg = styled.div<IStyledImgProps>`
     object-fit: cover;
 
     text-align: center;
-    background-color: ${(props) => props.theme.colors.primeColor};
+    background-color: ${(props) => props.theme.colors?.primeColor};
     color: white;
 
     display: flex;

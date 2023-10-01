@@ -14,21 +14,21 @@ export const Input = styled.input<Partial<IInputProps>>`
   padding-right: 40px;
 
   background-color: ${(props) =>
-    props.$bgc ? props.$bgc : props.theme.colors.bgc};
+    props.$bgc ? props.$bgc : props.theme.colors?.bgc};
   transition: 200ms;
 
   &::placeholder {
-    color: ${(props) => props.theme.colors.placeholderColor};
+    color: ${(props) => props.theme.colors?.placeholderColor};
   }
 
   &:not(:disabled) {
     &:hover {
-      box-shadow: 0 0 10px 10px ${(props) => props.theme.colors.bgc};
-      background-color: ${(props) => props.theme.colors.white};
+      box-shadow: 0 0 10px 10px ${(props) => props.theme.colors?.bgc};
+      background-color: ${(props) => props.theme.colors?.white};
     }
 
     &:focus {
-      border: 1px solid ${(props) => props.theme.colors.primeColor};
+      border: 1px solid ${(props) => props.theme.colors?.primeColor};
     }
   }
 
@@ -48,7 +48,7 @@ export const InputWrapper = styled.div<IInputProps>`
   }
 
   .errorMessage {
-    color: ${(props) => props.theme.colors.red};
+    color: ${(props) => props.theme.colors?.red};
     margin-top: 10px;
     text-align: center;
   }
@@ -61,14 +61,14 @@ export const InputWrapper = styled.div<IInputProps>`
 
     svg {
       width: 23px;
-      fill: ${(props) => props.theme.colors.placeholderColor};
+      fill: ${(props) => props.theme.colors?.placeholderColor};
     }
   }
 
   &:has(input:focus) {
     .inputIcon {
       svg {
-        fill: ${(props) => props.theme.colors.primeColor};
+        fill: ${(props) => props.theme.colors?.primeColor};
       }
     }
   }

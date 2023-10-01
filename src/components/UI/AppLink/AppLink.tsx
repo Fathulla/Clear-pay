@@ -12,7 +12,7 @@ export const AppLink = ({ linkLabel, align, hasIcon }: IAppLinkProps) => {
     <SCLink className="AppLink _noSelect" $hasIcon={hasIcon} align={align}>
       <span className="linkLabel">{linkLabel}</span>
       {hasIcon && (
-        <AppIcon className="linkIcon" name="arrow" width="12" height="10" />
+        <AppIcon className="linkIcon" name="arrow" width="12" height="10" data-testid="arrow-icon"/>
       )}
     </SCLink>
   );

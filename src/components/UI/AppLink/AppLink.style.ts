@@ -16,7 +16,7 @@ export const SCLink = styled.div<IStyledLinkProps>`
   gap: 14px;
 
   .linkLabel {
-    color: ${(props) => props.theme.colors.gray};
+    color: ${(props) => props.theme.colors?.gray};
     font-size: calc(0.2px + 14.3px); //? 18 | 15
   }
   ${(props) =>
@@ -28,7 +28,7 @@ export const SCLink = styled.div<IStyledLinkProps>`
     `}
 
   .linkIcon {
-    stroke: ${(props) => props.theme.colors.gray};
+    stroke: ${(props) => props.theme.colors?.gray};
   }
 
   width: fit-content;
@@ -39,12 +39,12 @@ export const SCLink = styled.div<IStyledLinkProps>`
     `}
 
   &:hover {
-    background-color: ${(props) => props.theme.colors.bgc};
+    background-color: ${(props) => props.theme.colors?.bgc};
     text-decoration: none;
   }
 
   &:active {
-    background-color: ${(props) => props.theme.colors.primeColor};
+    background-color: ${(props) => props.theme.colors?.primeColor};
     span {
       color: white;
     }
